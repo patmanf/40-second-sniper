@@ -1,0 +1,5 @@
+[{
+	"op" : "add",
+	"path" : "/genericScriptContexts/pat_sniper",
+	"value" : "/pat/trainedsniper.lua"
+}]
