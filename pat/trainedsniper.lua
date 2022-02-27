@@ -35,9 +35,7 @@ function init()
 		}
 	}
 	
-	message.setHandler("pat_trainedsniper", function(_,isLocal)
-		if isLocal then fire() end
-	end)
+	message.setHandler("pat_trainedsniper", fire)
 end
 
 function update(dt)
