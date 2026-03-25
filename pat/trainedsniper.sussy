@@ -16,7 +16,8 @@
     "knockback": 69,
     "damageTeam": { "type": "indiscriminate" },
     "damageType": "IgnoresDef",
-    "processing": "?scalenearest=3;1",
+    "piercing": true,
+    "processing": "?multiply=0000",
 
     "periodicActions": [
       {
@@ -34,13 +35,91 @@
       {
         "time": 0,
         "repeat": true,
-        "action": "particle",
-        "specification": {
-          "type": "ember",
-          "color": [ 0, 0, 0, 0 ],
-          "light": [ 100, 100, 50 ],
-          "timeToLive": 0.01
-        }
+        "action": "actions",
+        "list": [
+          { "action": "light", "color": [ 100, 80, 50 ] },
+          {
+            "action": "loop",
+            "count": 8,
+            "body": [
+              {
+                "action": "particle",
+                "rotate": true,
+                "specification": {
+                  "type": "ember",
+                  "layer": "back",
+                  "size": 1.25,
+                  "timeToLive": 0.05,
+                  "destructionTime": 0.2,
+                  "destructionAction": "shrink",
+                  "fullbright": true,
+                  "collidesForeground": false,
+                  "collidesLiquid": false,
+                  "color": [ 255, 160, 50 ],
+                  "light": [ 40, 20, 0 ],
+                  "initialVelocity": [ -33, 0 ],
+                  "position": [ -10, 0 ],
+                  "variance": {
+                    "initialVelocity": [ 20, 10 ],
+                    "position": [ 10, 0.1 ],
+                    "size": 0.5
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "action": "particle",
+            "rotate": true,
+            "specification": {
+              "type": "streak",
+              "layer": "back",
+              "size": 3,
+              "length": 80,
+              "timeToLive": 0,
+              "destructionTime": 0.2,
+              "destructionAction": "shrink",
+              "fullbright": true,
+              "collidesForeground": false,
+              "color": [ 255, 210, 60, 128 ],
+              "initialVelocity": [ 1, 0 ]
+            }
+          },
+          {
+            "action": "particle",
+            "rotate": true,
+            "specification": {
+              "type": "streak",
+              "layer": "back",
+              "size": 3,
+              "length": 100,
+              "timeToLive": 0,
+              "destructionTime": 0.12,
+              "destructionAction": "shrink",
+              "fullbright": true,
+              "collidesForeground": false,
+              "color": [ 255, 170, 20, 128 ],
+              "initialVelocity": [ 350, 0 ]
+            }
+          },
+          {
+            "action": "particle",
+            "rotate": true,
+            "specification": {
+              "type": "streak",
+              "layer": "back",
+              "size": 3,
+              "length": 50,
+              "timeToLive": 0,
+              "destructionTime": 0.03,
+              "destructionAction": "shrink",
+              "fullbright": true,
+              "collidesForeground": false,
+              "color": [ 255, 120, 0, 128 ],
+              "initialVelocity": [ 500, 0 ]
+            }
+          }
+        ]
       }
     ]
   }
