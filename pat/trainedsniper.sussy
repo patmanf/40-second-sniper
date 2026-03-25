@@ -10,11 +10,12 @@
 
   "projectileType": "standardbullet",
   "projectileParams": {
-    "movementSettings": { "collisionEnabled": false },
+    "movementSettings": { "collisionEnabled": false, "speedLimit": 500 },
+    "speed": 500,
+    "power": -1,
+    "knockback": 69,
     "damageTeam": { "type": "indiscriminate" },
     "damageType": "IgnoresDef",
-    "power": -1,
-    "speed": 500,
     "processing": "?scalenearest=3;1",
 
     "periodicActions": [
