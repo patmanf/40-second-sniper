@@ -1,10 +1,10 @@
 {
-  "updateDelta": 30,
+  "updateDelta": 15,
 
   "shootSeconds": 40,
   "repeatSeconds": 1,
 
-  "angleRange": [ 10, 40 ],
+  "angleRange": [ 8, 42 ],
   "inaccuracy": 0.006,
   "distance": 150,
 
