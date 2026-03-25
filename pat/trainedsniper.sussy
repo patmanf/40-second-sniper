@@ -1,0 +1,39 @@
+{
+  "updateDelta": 30,
+
+  "shootSeconds": 40,
+  "repeatSeconds": 1,
+
+  "angleRange": [ 10, 40 ],
+  "distance": 150,
+
+  "projectileType": "standardbullet",
+  "projectileParams": {
+    "movementSettings": { "collisionEnabled": false },
+    "damageTeam": { "type": "indiscriminate" },
+    "damageType": "IgnoresDef",
+    "power": -1,
+    "speed": 500,
+    "processing": "?scalenearest=3;1",
+
+    "periodicActions": [
+      {
+        "time": 0.22,
+        "repeat": false,
+        "action": "sound",
+        "options": [ "/sfx/gun/sniper3.ogg" ]
+      },
+      {
+        "time": 0,
+        "repeat": true,
+        "action": "particle",
+        "specification": {
+          "type": "ember",
+          "color": [ 0, 0, 0, 0 ],
+          "light": [ 100, 100, 50 ],
+          "timeToLive": 0.01
+        }
+      }
+    ]
+  }
+}
