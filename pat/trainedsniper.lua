@@ -44,8 +44,8 @@ end
 function fire()
   local angle = Random:randf(Cfg.angleRange[1], Cfg.angleRange[2])
 
-  local aimVec = vec2.withAngle(angle, -1)
-  local spawnPos = vec2.mul(aimVec, -Cfg.distance)
+  local spawnPos = vec2.withAngle(angle, Cfg.distance)
+  local aimVec = vec2.withAngle(angle + sb.nrand(Cfg.inaccuracy, 0), -1)
 
   if Random:randb() then
     spawnPos[1] = -spawnPos[1]

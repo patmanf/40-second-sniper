@@ -5,6 +5,7 @@
   "repeatSeconds": 1,
 
   "angleRange": [ 10, 40 ],
+  "inaccuracy": 0.006,
   "distance": 150,
 
   "projectileType": "standardbullet",
