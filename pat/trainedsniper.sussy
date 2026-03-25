@@ -20,10 +20,16 @@
 
     "periodicActions": [
       {
-        "time": 0.22,
+        "time": 0.18,
         "repeat": false,
-        "action": "sound",
-        "options": [ "/sfx/gun/sniper3.ogg" ]
+        "action": "loop",
+        "count": 3,
+        "body": [
+          {
+            "action": "sound",
+            "options": [ "/sfx/gun/sniper1.ogg", "/sfx/gun/sniper2.ogg", "/sfx/gun/sniper3.ogg", "/sfx/gun/sniper4.ogg" ]
+          }
+        ]
       },
       {
         "time": 0,
