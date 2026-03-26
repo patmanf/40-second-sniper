@@ -1,10 +1,11 @@
 {
-  "version" : "1.0.1",
   "author" : "pat",
-  "tags" : "Miscellaneous",
-  "description" : "adds a trained sniper that kills people who stand still for 40 seconds\n\nthat is all\n\n\n[img]https://i.imgur.com/wXjYMqP.gif[/img]https://discord.gg/GdsQSgV\n[img]https://i.imgur.com/uyG8oTa.gif[/img]https://www.patreon.com/pathiccstar",
-  "name" : "pat_trainedsniper",
+  "description" : "adds a trained sniper that kills people who stand still for 40 seconds",
   "friendlyName" : "sniper that kills people who stand still for 40 seconds",
+  "link" : "steam://url/CommunityFilePage/2766762992",
+  "name" : "pat_trainedsniper",
   "steamContentId" : "2766762992",
-  "link" : "steam://url/CommunityFilePage/2766762992"
+  "steamDescription" : "adds a trained sniper that kills people who stand still for 40 seconds\n\n\n[img]https://i.imgur.com/wXjYMqP.gif[/img]https://discord.gg/GdsQSgV\n[img]https://i.imgur.com/uyG8oTa.gif[/img]https://www.patreon.com/pathiccstar\n[img]https://i.imgur.com/xVfcRRH.gif[/img]https://ko-fi.com/patmanf\n[img]https://i.imgur.com/jJAj6jF.gif[/img]https://github.com/patmanf/40-second-sniper",
+  "tags" : "Miscellaneous",
+  "version" : "1.1"
 }
